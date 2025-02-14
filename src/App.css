@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navigation a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.navigation a:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.search-bar {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+}
+
+.nasa-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.nasa-container img {
+  transition: transform 0.3s ease;
+}
+
+.nasa-container img:hover {
+  transform: scale(1.02);
+}
+
+.nasa-container .card-body {
+  padding: 2rem;
+}
+
+.nasa-container .card-title {
+  color: #1e3d59;
+  font-weight: 600;
+}
+
+.nasa-container .card-text {
+  color: #546e7a;
+  line-height: 1.6;
+}
+
+
